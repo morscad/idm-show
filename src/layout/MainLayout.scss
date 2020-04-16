@@ -1,0 +1,32 @@
+.header {
+  width: 100%;
+  background-color: #26b8db;
+  display: flex;
+  flex-direction: row;
+  a {
+    text-decoration: none;
+  }
+
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.logo {
+  padding: 10px;
+  img {
+    height: 120px ;
+    width: auto;
+  }
+}
+
+.socialIcons {
+  margin-left: 40px;
+}
+
+.content {
+  margin: 40px 0 60px;
+}

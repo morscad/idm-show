@@ -2,7 +2,7 @@
   "name": "idm_grad_show",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://staging.mnorscad.com/idm/",
+  "homepage": "http://staging.mnorscad.com/idm/submission/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",

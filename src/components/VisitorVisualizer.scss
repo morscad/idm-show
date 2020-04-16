@@ -1,0 +1,27 @@
+.visualizerContainer {
+ width: 260px;
+  height: 120px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.usersContainer {
+  color: #FFFFFF;
+  font-size: 26px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height:22px;
+  color: #ffffff;
+}
+
+.user {
+  margin: 10px 10px 0px 0px;
+}

@@ -17,47 +17,47 @@ const ByCategory = () => {
 
           <div className={'categoryEntry'}>
               <div className={'categoryEntryImage'}>
-                  <img src={mr} />
+                  <img src={mr} alt={'Virtual / Mixed Reality projects'}/>
               </div>
               <div className={'categoryEntryTitle'}>Virtual / Mixed Reality</div>
           </div>
 
           <div className={'categoryEntry'}>
               <div className={'categoryEntryImage'}>
-                  <img src={abilities} />
+                  <img src={abilities} alt={'Ability projects'} />
               </div>
               <div className={'categoryEntryTitle'}>Abilities</div>
           </div>
 
           <div className={'categoryEntry'}>
               <div className={'categoryEntryImage'}>
-                  <img src={ux} />
+                  <img src={ux} alt={'UX projects'} />
               </div>
               <div className={'categoryEntryTitle'}>User Experience Design</div>
           </div>
 
           <div className={'categoryEntry'}>
               <div className={'categoryEntryImage'}>
-                  <img src={audio} />
+                  <img src={audio} alt={'Audio projects'} />
               </div>
               <div className={'categoryEntryTitle'}>Audio</div>
           </div>
 
           <div className={'categoryEntry'}>
               <div className={'categoryEntryImage'}>
-                  <img src={cinema} />
+                  <img src={cinema} alt={'Cinema'} />
               </div>
               <div className={'categoryEntryTitle'}>Cinema</div>
           </div>
           <div className={'categoryEntry'}>
               <div className={'categoryEntryImage'}>
-                  <img src={motioncapture} />
+                  <img src={motioncapture} alt={'Motion Capture projects'} />
               </div>
               <div className={'categoryEntryTitle'}>Motion Capture</div>
           </div>
           <div className={'categoryEntry'}>
               <div className={'categoryEntryImage'}>
-                  <img src={productDesign} />
+                  <img src={productDesign} alt={'Product Design projects'} />
               </div>
               <div className={'categoryEntryTitle'}>ProductDesign</div>
           </div>

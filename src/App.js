@@ -11,11 +11,7 @@ const App = () => {
   return (
     <MainContext.Provider value={[state, setState]}>
       <Router>
-        <Switch>
-          <Route exact path="/">
             <HomePage context={MainContext} />
-          </Route>
-        </Switch>
       </Router>
       <UserManager context={MainContext} />
     </MainContext.Provider>

@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext } from "react";
 const UserManager = ({ context }) => {
   const [state, setState] = useContext(context);
   setTimeout(() => {

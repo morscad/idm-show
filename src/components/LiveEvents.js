@@ -2,7 +2,6 @@ import React from "react";
 import "./LiveEvents.scss";
 import dj from "../assets/images/dj.png";
 import qa from "../assets/images/zoomChat.png";
-import MainLayout from "../layout/MainLayout";
 const LiveEvents = () => {
   return (
     <div className={'liveEvents'}>
@@ -11,13 +10,13 @@ const LiveEvents = () => {
         <div className={"liveElementBlock"}>
           <div className={"liveElementTitle"}>Live performance at 8:30PM</div>
           <div>
-            <img src={dj} />
+            <img src={dj} alt={'Live performance at 8:30PM'} />
           </div>
         </div>
         <div className={"liveElementBlock"}>
           <div className={"liveElementTitle"}>Artist Q&A at 7:45PM</div>
           <div className={"liveElementImage"}>
-            <img src={qa} />
+            <img src={qa} alt={'Artist Q&A at 7:45PM'} />
           </div>
         </div>
       </div>

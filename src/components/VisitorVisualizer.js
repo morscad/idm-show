@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
 const VisitorVisualizer = ({ context }) => {
-  const [state, setState] = useContext(context);
+  const [state, ] = useContext(context);
   return (
     <div className={'visualizerContainer'}>
       <div className={'title'}>{state.users.length} users are currently live on this site</div>

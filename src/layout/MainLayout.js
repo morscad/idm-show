@@ -9,7 +9,7 @@ import twitter from "../assets/icons/twitter.svg";
 
 const MainLayout = ({ children, context }) => {
   const [showPOpup, setShowPopup] = useState(true);
-  const [state, setState] = useContext(context);
+  const [state, ] = useContext(context);
 
   return (
     <div>

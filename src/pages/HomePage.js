@@ -25,14 +25,14 @@ const HomePage = ({ context }) => {
           showStatus={false}
         >
           <div>
-            <img src={img1} />
+            <img src={img1} alt={'Project 1'} />
             <div className="liveNotification">Live in 3h 21m</div>
           </div>
           <div>
-            <img src={img2} />
+            <img src={img2} alt={'Project 2'} />
           </div>
           <div>
-            <img src={img3} />
+            <img src={img3}alt={'Project 3'}  />
           </div>
         </Carousel>
       </div>

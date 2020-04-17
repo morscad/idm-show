@@ -23,13 +23,29 @@ $breakpoint-tablet: 960px;
     width: 60%;
     min-width: 850px;
     min-height: 100vh;
+    height: auto;
   }
   .showLogo {
-    margin-left: 100px;
+    text-align: center;
+  }
+
+  .joinBtn {
+    margin-top: 240px;
+    width: 320px;
+    height: 60px;
   }
   .submitBtn {
-    margin-left: 210px;
+    margin-top: 240px;
+    width: 320px;
+    height: 60px;
   }
+  .buttonsContainer {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
 }
 
 @media (max-width: $breakpoint-tablet) {
@@ -40,7 +56,7 @@ $breakpoint-tablet: 960px;
   .leftPortion {
     order: 2;
     width: 100%;
-    min-height: 800px
+    min-height: 800px;
   }
 
   .leftTextContainer {
@@ -60,9 +76,24 @@ $breakpoint-tablet: 960px;
       height: auto;
     }
   }
-  .submitBtn {
-    margin: 0 auto;
+
+  .joinBtn {
+    margin: 20px auto;
+    width: 320px;
+    height: 60px;
   }
+  .submitBtn {
+    margin: 20px auto;
+    width: 320px;
+    height: 60px;
+  }
+  .buttonsContainer {
+    margin-top: 120px;
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+  }
+
 }
 
 .App {
@@ -106,27 +137,6 @@ $breakpoint-tablet: 960px;
   color: #ffffff;
   margin-bottom: 40px;
 }
-.joinBtn {
-  margin-top: 220px;
-  width: 370px;
-  height: 75px;
-  background-color: #000000;
-  text-align: center;
-  font-family: futura-pt, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 42px;
-  padding-top: 15px;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  cursor: pointer;
-  text-decoration: none;
-  &:hover {
-    background-color: #000000;
-    color: #ffffff;
-    border: 2px solid #ef56ef;
-  }
-}
 
 .rightPortion {
   background-color: #26b8db;
@@ -139,22 +149,37 @@ $breakpoint-tablet: 960px;
   margin-top: 60px;
 }
 .submitBtn {
-  margin-top: 240px;
-  width: 370px;
-  height: 75px;
   background-color: #ffffff;
   text-align: center;
   font-family: futura-pt, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 42px;
-  padding-top: 15px;
+  padding-top: 10px;
   color: #000000;
   cursor: pointer;
-
 
   &:hover {
     background-color: #ef56ef;
     color: #ffffff;
+  }
+}
+
+.joinBtn {
+  background-color: #000000;
+  text-align: center;
+  font-family: futura-pt, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 42px;
+  padding-top: 10px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #ef56ef;
   }
 }

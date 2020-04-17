@@ -9,7 +9,7 @@ function App() {
       <div className="App">
         <div className={"leftPortion"}>
           <div className="leftTextContainer">
-            <div className={"showInfoTitle"}>Information Here</div>
+            <div className={"showInfoTitle"}>Showcase 2020</div>
             <div className={"showInfoBody"}>
               Submit your work for the IDM 2020 Virtual Spring Showcase! The
               showcase is an opportunity for students to receive a public

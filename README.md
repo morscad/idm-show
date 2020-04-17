@@ -2,6 +2,7 @@
 
 By Omar AL FALEH (omar@morscad.com)  
 _April 17, 2020_  
+
 This repo is made of two main branches: `submission_website` for the submission website, and `master` for the ongoing development of the final show site.  
   
 To build locally, checkout the needed branch, update `package.json` so that the `homepage` attribute reflects the right directory structure of where your site will be deployed .the url prefix doesn’t really matter, only sub-folders of the final deployment destination matters.  

@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./ProjectsPage.scss";
+import "./CalendarPage.scss";
 import MainLayout from "../layout/MainLayout";
-const ProjectsPage = () => {
+const CalendarPage = () => {
   return (
     <MainLayout>
       <div></div>
@@ -10,4 +10,4 @@ const ProjectsPage = () => {
   );
 };
 
-export default ProjectsPage;
+export default CalendarPage;

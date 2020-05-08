@@ -1,8 +1,8 @@
 import React from "react";
 
-import "./AboutPage.scss";
+import "./ProjectsPage.scss";
 import MainLayout from "../layout/MainLayout";
-const AboutPage = () => {
+const ProjectsPage = () => {
   return (
     <MainLayout>
       <div></div>
@@ -10,4 +10,4 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;
+export default ProjectsPage;

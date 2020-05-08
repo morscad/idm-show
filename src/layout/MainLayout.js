@@ -6,10 +6,10 @@ import "./MainLayout.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import {Link} from "react-router-dom";
 
-const MainLayout = ({ children, context }) => {
+const MainLayout = ({ children }) => {
   const [showPOpup, setShowPopup] = useState(false);
-  const [state] = useContext(context);
 
   return (
     <div>
@@ -23,10 +23,10 @@ const MainLayout = ({ children, context }) => {
               />
               <div>May 12th, 3:00</div>
             </div>
-            <div className={"headerMenuItem"}>Home</div>
-            <div className={"headerMenuItem"}>About</div>
-            <div className={"headerMenuItem"}>Projects</div>
-            <div className={"headerMenuItem"}>Calendar</div>
+            <div className={"headerMenuItem"}><Link to={'/'}>Home</Link></div>
+            <div className={"headerMenuItem"}><Link to={'/about'}>About</Link></div>
+            <div className={"headerMenuItem"}><Link to={'/projects'}>Projects</Link></div>
+            <div className={"headerMenuItem"}><Link to={'/calendar'}>Calendar</Link></div>
           </div>
         </div>
       </div>

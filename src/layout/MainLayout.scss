@@ -1,4 +1,4 @@
-@import '../vars';
+@import "../vars";
 
 .header {
   width: 100%;
@@ -29,7 +29,7 @@
   font-weight: 400;
   font-size: 22px;
   img {
-    height: 120px ;
+    height: 120px;
     width: auto;
   }
 }
@@ -40,15 +40,17 @@
   font-weight: 400;
   font-size: 26px;
   letter-spacing: 4px;
-  color: $blue;
   margin-bottom: 40px;
   text-transform: uppercase;
-
+  a {
+    color: $blue;
+  }
   &:hover {
-    color: $purple;
+    a {
+      color: $purple;
+    }
   }
 }
-
 
 .footer {
   width: 100%;
@@ -61,35 +63,32 @@
   max-width: $md;
   margin: 0 auto;
   padding-top: 12px;
-  display: flex;;
+  display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.tandonLogoContainer{
+.tandonLogoContainer {
   img {
     width: 250px;
     height: auto;
   }
 }
 .socialIconsContainer {
-
 }
 .socialIcons {
   margin-left: 40px;
   font-size: 40px;
 }
 
-
-
 .welcomePopup {
   position: fixed;
   z-index: 10;
-  background-color: rgba(0,0,0,0.5);
-  top:0;
-  bottom:0;
-  left:0;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  left: 0;
   right: 0;
-  animation: .5s ease-out pulse;
+  animation: 0.5s ease-out pulse;
 }
 @keyframes pulse {
   0% {
@@ -100,20 +99,19 @@
   }
 }
 
-
 .popupBody {
   width: 50%;
   margin-left: 25%;
   margin-top: 100px;
-  background: rgb(2,0,36);
-  background: linear-gradient(rgba(17,102,102,1) 0%, rgba(22,106,128,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    rgba(17, 102, 102, 1) 0%,
+    rgba(22, 106, 128, 1) 100%
+  );
   border-radius: 20px;
   padding: 50px 30px;
-  border: 5px solid #FFFFFF;
-
-
+  border: 5px solid #ffffff;
 }
-
 
 .popupTitle {
   font-family: futura-pt, sans-serif;
@@ -122,7 +120,6 @@
   font-size: 28px;
   color: #ffffff;
   margin-bottom: 20px;
-
 }
 .popupContent {
   font-family: futura-pt, sans-serif;

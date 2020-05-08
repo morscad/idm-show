@@ -11,9 +11,9 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import LiveEvents from "../components/LiveEvents";
 import ByCategory from "../components/ByCategory";
 
-const HomePage = ({ context }) => {
+const HomePage = () => {
   return (
-    <MainLayout context={context}>
+    <MainLayout>
       <div className={"carouselContainer"}>
         <Carousel
           autoPlay={true}

@@ -1,85 +1,35 @@
-@import '../vars';
-
 .header {
   width: 100%;
-  background-color: #000000;
+  background-color: #26b8db;
   display: flex;
   flex-direction: row;
-  padding-top: 10px;
   a {
     text-decoration: none;
   }
+
 }
-.content {
-  margin: 40px 0 60px;
-}
+
 .headerContainer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 100%;
-  max-width: $md;
 }
 
 .logo {
   padding: 10px;
-  color: $blue;
-  font-family: futura-pt, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
   img {
     height: 120px ;
     width: auto;
   }
 }
 
-.headerMenuItem {
-  font-family: futura-pt, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 26px;
-  letter-spacing: 4px;
-  color: $blue;
-  margin-bottom: 40px;
-  text-transform: uppercase;
-
-  &:hover {
-    color: $purple;
-  }
-}
-
-
-.footer {
-  width: 100%;
-  height: 60px;
-  background-color: $blue;
-}
-
-.footerContainer {
-  width: 100%;
-  max-width: $md;
-  margin: 0 auto;
-  padding-top: 12px;
-  display: flex;;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.tandonLogoContainer{
-  img {
-    width: 250px;
-    height: auto;
-  }
-}
-.socialIconsContainer {
-
-}
 .socialIcons {
   margin-left: 40px;
-  font-size: 40px;
 }
 
-
+.content {
+  margin: 40px 0 60px;
+}
 
 .welcomePopup {
   position: fixed;

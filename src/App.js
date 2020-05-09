@@ -10,10 +10,10 @@ import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import CalendarPage from "./pages/CalendarPage";
 
-export const MainContext = React.createContext({ projects: [] });
+export const MainContext = React.createContext({ projects: {} });
 
 const App = () => {
-  const [state, setState] = useState({ projects: [] });
+  const [state, setState] = useState({ projects: {} } );
   const [isInit, init] = useState(false);
 
   const getAllProjects = async () => {
@@ -38,7 +38,16 @@ const App = () => {
       projects = concat(projects, result2.records);
       const { records2 } = result2;
     }
-    setState({ projects: projects });
+    console.log(projects);
+    let projectByCategory = {};
+    projects.forEach((project) => {
+      if (!projectByCategory[project.fields.Type]) {
+        projectByCategory[project.fields.Type] = [];
+      }
+      projectByCategory[project.fields.Type].push(project.fields);
+    })
+
+    setState({ projects: projectByCategory });
     // console.log(projects);
   };
   useEffect(() => {

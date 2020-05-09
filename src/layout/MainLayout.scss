@@ -1,6 +1,8 @@
 @import "../vars";
 
 .header {
+  position: fixed;
+  top: 0;
   width: 100%;
   background-color: #000000;
   display: flex;
@@ -10,8 +12,10 @@
     text-decoration: none;
   }
 }
+
 .content {
-  margin: 40px 0 60px;
+  margin: 220px 0 60px;
+  min-height: calc(100vh - 340px;)
 }
 .headerContainer {
   display: flex;

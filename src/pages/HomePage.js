@@ -15,7 +15,7 @@ const HomePage = () => {
   return (
     <MainLayout>
       <div className={"carouselContainer"}>
-        <Carousel
+        {/*<Carousel
           autoPlay={true}
           infiniteLoop={true}
           interval={5000}
@@ -34,10 +34,17 @@ const HomePage = () => {
           <div>
             <img src={img3}alt={'Project 3'}  />
           </div>
-        </Carousel>
+        </Carousel>*/}
       </div>
-      <LiveEvents />
-      <ByCategory />
+      <div className={"liveVideo"}>
+        <iframe
+          src="https://player.vimeo.com/video/416506564"
+          frameBorder="0"
+          allow="autoplay; fullscreen"
+          allowFullScreen
+          className={"videoContainer"}
+        ></iframe>
+      </div>
     </MainLayout>
   );
 };

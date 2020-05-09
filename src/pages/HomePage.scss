@@ -4,7 +4,7 @@
 }
 .liveNotification {
   position: relative;
-  top: - 60px;
+  top: -60px;
   height: 40px;
   width: 60%;
   margin-left: 20%;
@@ -14,10 +14,17 @@
   font-style: normal;
   font-weight: 500;
   font-size: 28px;
-  line-height:22px;
+  line-height: 22px;
   color: #ffffff;
 }
-
-
-
-
+.liveVideo {
+  padding:56.25% 0 0 0;
+  position:relative;
+}
+.videoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

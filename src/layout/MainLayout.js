@@ -5,17 +5,32 @@ import tandon_long_black from "../assets/images/tandon_long_black.png";
 import "./MainLayout.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import {Link, useLocation} from "react-router-dom";
+import {
+  faVimeo,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+import { Link, useLocation } from "react-router-dom";
 
 const MainLayout = ({ children }) => {
   const [showPOpup, setShowPopup] = useState(false);
   const { pathname } = useLocation();
   return (
-    <div className={pathname === '/' || pathname.indexOf('/category/') > -1 ? 'bodyBlue' : 'bodyBlack'}>
+    <div
+      className={
+        pathname === "/" || pathname.indexOf("/category/") > -1
+          ? "bodyBlue"
+          : "bodyBlack"
+      }
+    >
       <div className={"header"}>
         <div className={"container"}>
-          <div className={`headerContainer ${pathname === '/' || pathname.indexOf('/category/') > -1 ? 'blackText' : 'blueText'}`}>
+          <div
+            className={`headerContainer ${
+              pathname === "/" || pathname.indexOf("/category/") > -1
+                ? "blackText"
+                : "blueText"
+            }`}
+          >
             <div className={"logo"}>
               <img
                 src={showLogo}
@@ -23,10 +38,18 @@ const MainLayout = ({ children }) => {
               />
               <div>May 12th, 3:00</div>
             </div>
-            <div className={"headerMenuItem"}><Link to={'/'}>Home</Link></div>
-            <div className={"headerMenuItem"}><Link to={'/about'}>About</Link></div>
-            <div className={"headerMenuItem"}><Link to={'/categories'}>Projects</Link></div>
-            <div className={"headerMenuItem"}><Link to={'/calendar'}>Calendar</Link></div>
+            <div className={"headerMenuItem"}>
+              <Link to={"/"}>Home</Link>
+            </div>
+            <div className={"headerMenuItem"}>
+              <Link to={"/about"}>About</Link>
+            </div>
+            <div className={"headerMenuItem"}>
+              <Link to={"/categories"}>Projects</Link>
+            </div>
+            <div className={"headerMenuItem"}>
+              <Link to={"/calendar"}>Calendar</Link>
+            </div>
           </div>
         </div>
       </div>
@@ -35,13 +58,36 @@ const MainLayout = ({ children }) => {
       </div>
       <div className={"footer"}>
         <div className={"footerContainer"}>
-          <div className={'tandonLogoContainer'}>
-            <img src={tandon_long_black} alt={"Tandon School of Engineering"}/>
+          <div className={"tandonLogoContainer"}>
+            <a
+              href={"https://engineering.nyu.edu/"}
+              target={"_blank"}
+              referrerPolicy={"no-referrer"}
+              rel={"noreferrer nofollow"}
+            >
+              <img
+                src={tandon_long_black}
+                alt={"Tandon School of Engineering"}
+              />
+            </a>
           </div>
-          <div className={'socialIconsContainer'}>
-            <FontAwesomeIcon className={'socialIcons'} icon={faFacebookF} />
-            <FontAwesomeIcon className={'socialIcons'} icon={faInstagram} />
-            <FontAwesomeIcon className={'socialIcons'} icon={faLinkedinIn} />
+          <div className={"socialIconsContainer"}>
+            <a
+                href={"hhttps://www.instagram.com/idmnyu/"}
+                target={"_blank"}
+                referrerPolicy={"no-referrer"}
+                rel={"noreferrer nofollow"}
+            >
+              <FontAwesomeIcon className={"socialIcons"} icon={faInstagram} />
+            </a>
+            <a
+                href={"https://vimeo.com/idmnyu"}
+                target={"_blank"}
+                referrerPolicy={"no-referrer"}
+                rel={"noreferrer nofollow"}
+            >
+            <FontAwesomeIcon className={"socialIcons"} icon={faVimeo} />
+            </a>
           </div>
         </div>
       </div>

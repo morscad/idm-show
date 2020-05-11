@@ -1,5 +1,6 @@
 import React from "react";
 import about from "../assets/images/about.png";
+import idm from "../assets/images/IDM-logo.png";
 import "./AboutPage.scss";
 import MainLayout from "../layout/MainLayout";
 const AboutPage = () => {
@@ -10,13 +11,26 @@ const AboutPage = () => {
           <img src={about} />
         </div>
         <div className={"aboutContent"}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam placerat
-          cursus varius. Proin malesuada finibus ante, ac dignissim velit
-          viverra nec. Pellentesque pulvinar molestie nisl, sed venenatis nulla
-          vestibulum vitae. Ut ullamcorper condimentum orci sit amet fermentum.
-          Aliquam pellentesque libero nec ipsum egestas laoreet. Proin pretium
-          nulla quis dictum venenatis. Phasellus nec dolor nec eros convallis
-          lobortis.
+          <div className={"aboutText"}>
+            The Integrated Digital Media Spring showcase is a virtual event
+            featuring the work of our Undergraduate and Graduate students. In
+            our upcoming live stream, our students will present and share their
+            work in a variety of mediums - including XR projects, Games, UX
+            design, Audio, Video, Interactive media, and other experimental and
+            inventive work.
+          </div>
+          <div className={"aboutLink"}>
+            <div>
+              <a
+                href={"http://idm.engineering.nyu.edu/"}
+                target={"_blank"}
+                referrerPolicy={"no-referrer"}
+                rel={"noreferrer nofollow"}
+              >
+                <img src={idm} />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </MainLayout>

@@ -55,13 +55,13 @@ const App = () => {
     }
     let projectByCategory = {};
     projects.forEach((project) => {
-      if (!projectByCategory[project.fields.conceptCategory]) {
-        if (!project.fields.conceptCategory) {
-          project.fields.conceptCategory = "Other";
+      if (!projectByCategory[project.fields.techCategory]) {
+        if (!project.fields.techCategory) {
+          project.fields.techCategory = "Other";
         }
-        projectByCategory[project.fields.conceptCategory] = [];
+        projectByCategory[project.fields.techCategory] = [];
       }
-      projectByCategory[project.fields.conceptCategory].push(project.fields);
+      projectByCategory[project.fields.techCategory].push(project.fields);
     })
 
     setState({ settings: settings, projects: projectByCategory });

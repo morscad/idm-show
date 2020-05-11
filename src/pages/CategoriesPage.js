@@ -20,7 +20,7 @@ const CategoriesPage = () => {
           Object.keys(projectList).length > 0 &&
           Object.keys(projectList).map((category, index) => {
             return (
-              <Link to={`/category/${category.toLowerCase().split(" ").join("-")}`} style={{ textDecoration: "none" }} key={`category_${index}`}>
+              <Link to={`/category/${category.toLowerCase().split(" ").join("-").split("/").join("-")}`} style={{ textDecoration: "none" }} key={`category_${index}`}>
                 <div className={"categoryBox"}>{category}</div>
               </Link>
             );

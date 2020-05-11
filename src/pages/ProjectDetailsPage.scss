@@ -1,0 +1,142 @@
+@import "../vars";
+
+.mainProjectContainer {
+}
+.projectTitle {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  color: $blue;
+}
+.projectSubtitle {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: $blue;
+  margin: 0 0 40px 0;
+
+  a {
+    text-decoration: none;
+    color: $blue;
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+
+.projectDetailsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.projectCoverImage {
+  width: 50%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.projectDescription {
+  width: calc(50% - 40px);
+  margin-left: 40px;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  color: #ffffff;
+  margin: 0 0 40px 0;
+}
+.moreDocumentation {
+  a {
+    color: $blue;
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+.projectTech {
+  margin: 40px 0 0 0;
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  color: $blue;
+  :nth-child(1) {
+    font-weight: 500;
+  }
+  :nth-child(2) {
+    font-weight: 300;
+  }
+}
+
+.projectCreators {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
+
+  a {
+    text-decoration: none;
+    color: $blue;
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+
+.instagramLink {
+  font-size: 24px;
+  padding: 4px 0 0 10px;
+  a {
+    color: $blue;
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+
+.mediaComponents {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  color: $blue;
+  margin: 40px 0 30px 0;
+}
+
+.soundcloudLink {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  margin: 40px 0 30px 0;
+  a {
+    text-decoration: none;
+    color: $blue;
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+.projectVideoContainer {
+  margin: 20px auto;
+  text-align: center;
+}
+.imageMediaContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 0 0;
+  div {
+    width: 49%;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px 0;
+  }
+}

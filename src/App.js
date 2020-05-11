@@ -9,17 +9,32 @@ import api from "./services/apiService";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import CalendarPage from "./pages/CalendarPage";
+import LiveStage from "./pages/LiveStage";
+import CategoriesPage from "./pages/CategoriesPage";
+import ProjectDetailsPage from "./pages/ProjectDetailsPage";
 
-export const MainContext = React.createContext({ projects: {} });
+export const MainContext = React.createContext({ settings:{}, projects: {}, allProjects: [] });
 
 const App = () => {
-  const [state, setState] = useState({ projects: {} } );
+  const [state, setState] = useState({ settings:{}, projects: {} } );
   const [isInit, init] = useState(false);
 
   const getAllProjects = async () => {
     let projects = [];
+    let settings = {};
+    const settingsResult = await api.sendRequest(
+        process.env.REACT_APP_AIRTABLE_SETTINGS_URL.split("{-}").join(
+            process.env.REACT_APP_AIRTABLE_BASE_ID
+        ),
+        {},
+        "GET"
+    );
+    settingsResult.records.map((res) => {
+      settings[res.fields.key] = res.fields.value;
+    });
+
     const result = await api.sendRequest(
-      process.env.REACT_APP_AIRTABLE_URL.split("{-}").join(
+      process.env.REACT_APP_AIRTABLE_PROJECTS_URL.split("{-}").join(
         process.env.REACT_APP_AIRTABLE_BASE_ID
       ),
       {},
@@ -29,7 +44,7 @@ const App = () => {
     projects = concat(projects, records);
     if (!!offset && offset !== "") {
       const result2 = await api.sendRequest(
-        `${process.env.REACT_APP_AIRTABLE_URL.split("{-}").join(
+        `${process.env.REACT_APP_AIRTABLE_PROJECTS_URL.split("{-}").join(
           process.env.REACT_APP_AIRTABLE_BASE_ID
         )}?offset=${offset}`,
         {},
@@ -38,17 +53,18 @@ const App = () => {
       projects = concat(projects, result2.records);
       const { records2 } = result2;
     }
-    console.log(projects);
     let projectByCategory = {};
     projects.forEach((project) => {
-      if (!projectByCategory[project.fields.Type]) {
-        projectByCategory[project.fields.Type] = [];
+      if (!projectByCategory[project.fields.conceptCategory]) {
+        if (!project.fields.conceptCategory) {
+          project.fields.conceptCategory = "Other";
+        }
+        projectByCategory[project.fields.conceptCategory] = [];
       }
-      projectByCategory[project.fields.Type].push(project.fields);
+      projectByCategory[project.fields.conceptCategory].push(project.fields);
     })
 
-    setState({ projects: projectByCategory });
-    // console.log(projects);
+    setState({ settings: settings, projects: projectByCategory });
   };
   useEffect(() => {
     if (!isInit) {
@@ -63,11 +79,20 @@ const App = () => {
           <Route exact path="/">
             <HomePage />
           </Route>
+          <Route exact path="/live-stage/:stageID">
+            <LiveStage />
+          </Route>
           <Route exact path="/about">
             <AboutPage />
           </Route>
-          <Route exact path="/projects">
+          <Route exact path="/project/:projectID">
+            <ProjectDetailsPage />
+          </Route>
+          <Route exact path="/category/:categoryName">
             <ProjectsPage />
+          </Route>
+          <Route exact path="/categories">
+            <CategoriesPage />
           </Route>
           <Route exact path="/calendar">
             <CalendarPage />

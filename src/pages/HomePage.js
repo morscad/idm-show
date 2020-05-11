@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import MainLayout from "../layout/MainLayout";
+import { Link } from "react-router-dom";
 
 import "./HomePage.scss";
 import { Carousel } from "react-responsive-carousel";
@@ -36,14 +37,39 @@ const HomePage = () => {
           </div>
         </Carousel>*/}
       </div>
-      <div className={"liveVideo"}>
-        <iframe
-          src="https://player.vimeo.com/video/416506564"
-          frameBorder="0"
-          allow="autoplay; fullscreen"
-          allowFullScreen
-          className={"videoContainer"}
-        ></iframe>
+      <div className={"streamContainer"}>
+        <Link to={"/live-stage/1"} style={{ textDecoration: 'none' }}>
+          <div className={"streamBubble"}>
+            <div className={"streamBubbleTitle"}>Live Stream 1</div>
+            <div className={"streamBubbleBody"}>
+              <div>
+                <div className={"currentlyStreamingTitle"}>
+                  {" "}
+                  Currently Streaming
+                </div>
+                <div className={"currentlyStreamingBody"}> Student XXXX</div>
+                <div className={"nextStreamingTitle"}> Next stream at</div>
+                <div className={"nextStreamingBody"}> 3:00PM</div>
+              </div>
+            </div>
+          </div>
+        </Link>
+        <Link to={"/live-stage/2"} style={{ textDecoration: 'none' }}>
+          <div className={"streamBubble"}>
+            <div className={"streamBubbleTitle"}>Live Stream 2</div>
+            <div className={"streamBubbleBody"}>
+              <div>
+                <div className={"currentlyStreamingTitle"}>
+                  {" "}
+                  Currently Streaming
+                </div>
+                <div className={"currentlyStreamingBody"}> Student YYYY</div>
+                <div className={"nextStreamingTitle"}> Next stream at</div>
+                <div className={"nextStreamingBody"}> 3:15PM</div>
+              </div>
+            </div>
+          </div>
+        </Link>
       </div>
     </MainLayout>
   );

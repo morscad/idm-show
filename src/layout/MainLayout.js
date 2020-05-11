@@ -6,16 +6,16 @@ import "./MainLayout.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 
 const MainLayout = ({ children }) => {
   const [showPOpup, setShowPopup] = useState(false);
-
+  const { pathname } = useLocation();
   return (
-    <div>
+    <div className={pathname === '/' || pathname.indexOf('/category/') > -1 ? 'bodyBlue' : 'bodyBlack'}>
       <div className={"header"}>
         <div className={"container"}>
-          <div className={"headerContainer"}>
+          <div className={`headerContainer ${pathname === '/' || pathname.indexOf('/category/') > -1 ? 'blackText' : 'blueText'}`}>
             <div className={"logo"}>
               <img
                 src={showLogo}
@@ -25,7 +25,7 @@ const MainLayout = ({ children }) => {
             </div>
             <div className={"headerMenuItem"}><Link to={'/'}>Home</Link></div>
             <div className={"headerMenuItem"}><Link to={'/about'}>About</Link></div>
-            <div className={"headerMenuItem"}><Link to={'/projects'}>Projects</Link></div>
+            <div className={"headerMenuItem"}><Link to={'/categories'}>Projects</Link></div>
             <div className={"headerMenuItem"}><Link to={'/calendar'}>Calendar</Link></div>
           </div>
         </div>

@@ -18,10 +18,10 @@ const ProjectDetailsPage = () => {
   const updateDimensions = () => {
     let w = 0;
     let h = 0;
-    if (window.innerWidth > 960) {
-      w = 960;
+    if (window.innerWidth > 1096) {
+      w = 1096;
     } else {
-      w = window.innerWidth - 10;
+      w = window.innerWidth - 20;
     }
     h = (w * 1080) / 1920;
     setPlayerDimensions({ width: w, height: h });
@@ -52,20 +52,58 @@ const ProjectDetailsPage = () => {
       {currentProject && (
         <div className={"mainProjectContainer"}>
           <div className={"projectTitle"}>{currentProject.projectTitle}</div>
-          <div className={"projectSubtitle"}>
-            {currentProject.submissionType}{" "}
+          <div className={"projectHeader"}>
+            <div className={"projectSubtitle"}>
+              {currentProject.submissionType}
+            </div>
             {!!currentProject.onlineURL && currentProject.onlineURL !== "" && (
-              <span>
-                -{" "}
-                <a
-                  href="${currentProject.onlineURL}"
+              <div className={"projectSubtitleWebsite"}>
+                &nbsp;-&nbsp;<a
+                  href={currentProject.onlineURL}
                   target={"_blank"}
                   referrerPolicy={"no-referrer"}
                   rel={"noreferrer nofollow"}
                 >
-                  {currentProject.onlineURL}
+                  Website
                 </a>
-              </span>
+              </div>
+            )}
+          </div>
+          <div className={"projectCreators"}>
+            Created By: {currentProject.principleName} (
+            {currentProject.studyYear}){" "}
+            {currentProject.otherNames && currentProject.otherNames !== ""
+                ? `, ${currentProject.otherNames}`
+                : ""}
+            {currentProject.instagram && currentProject.instagram !== "" && (
+                <span>
+                    <a
+                        href={currentProject.instagram}
+                        target={"_blank"}
+                        referrerPolicy={"no-referrer"}
+                        rel={"noreferrer nofollow"}
+                    >
+                      <FontAwesomeIcon
+                          className={"instagramLink"}
+                          icon={faInstagram}
+                      />
+                    </a>
+                  </span>
+            )}
+          </div>
+          <div className={"projectCreators"}>
+            {currentProject.portfolioURL &&
+            currentProject.portfolioURL !== "" && (
+                <span>
+                      <a
+                          href={currentProject.portfolioURL}
+                          target={"_blank"}
+                          referrerPolicy={"no-referrer"}
+                          rel={"noreferrer nofollow"}
+                      >
+                        Portfolio
+                      </a>
+                    </span>
             )}
           </div>
           <div className={"projectDetailsContainer"}>
@@ -74,43 +112,7 @@ const ProjectDetailsPage = () => {
                 src={currentProject.coverImage.split("open?").join("uc?")}
                 alt={"Cover Image"}
               />
-              <div className={"projectCreators"}>
-                Created By: {currentProject.principleName} (
-                {currentProject.studyYear}){" "}
-                {currentProject.otherNames && currentProject.otherNames !== ""
-                  ? `, ${currentProject.otherNames}`
-                  : ""}
-                {currentProject.instagram && currentProject.instagram !== "" && (
-                  <span>
-                    <a
-                      href={currentProject.instagram}
-                      target={"_blank"}
-                      referrerPolicy={"no-referrer"}
-                      rel={"noreferrer nofollow"}
-                    >
-                      <FontAwesomeIcon
-                        className={"instagramLink"}
-                        icon={faInstagram}
-                      />
-                    </a>
-                  </span>
-                )}
-              </div>
-              <div className={"projectCreators"}>
-                {currentProject.portfolioURL &&
-                  currentProject.portfolioURL !== "" && (
-                    <span>
-                      <a
-                        href={currentProject.portfolioURL}
-                        target={"_blank"}
-                        referrerPolicy={"no-referrer"}
-                        rel={"noreferrer nofollow"}
-                      >
-                        Portfolio
-                      </a>
-                    </span>
-                  )}
-              </div>
+
             </div>
             <div className={"projectDescription"}>
               <div>{currentProject.longDescription}</div>
@@ -229,14 +231,13 @@ const ProjectDetailsPage = () => {
                         .split(",")
                         .map((imageURL, index) => {
                           return (
-                              <div key={`otherImages_${index}`}>
+                            <div key={`otherImages_${index}`}>
                               {imageURL.indexOf("open?") > -1 && (
                                 <img
                                   src={imageURL.split("open?").join("uc?")}
-
                                 />
                               )}
-                              </div>
+                            </div>
                           );
                         })}
                     </>

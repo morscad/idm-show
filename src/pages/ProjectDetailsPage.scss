@@ -1,6 +1,79 @@
 @import "../vars";
 
+@media (min-width: $lg) {
+  .projectDetailsContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .projectCoverImage {
+    width: 50%;
+  }
+  .projectDescription {
+    width: calc(50% - 40px);
+    margin-left: 40px;
+  }
+  .imageMediaContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+    div {
+      width: 49%;
+    }
+  }
+}
+
+@media (min-width: $md) and (max-width: $lg) {
+  .projectDetailsContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projectCoverImage {
+    width: 100%;
+  }
+
+  .projectDescription {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .imageMediaContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    div {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .projectDetailsContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .projectCoverImage {
+    width: 100%;
+  }
+
+  .projectDescription {
+    width: 100%;
+    margin-left: 0;
+  }
+  .imageMediaContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 20px 0 0 0;
+    div {
+      width: 100%;
+    }
+  }
+}
+
 .mainProjectContainer {
+  padding: 0 15px;
 }
 .projectTitle {
   font-family: futura-pt, sans-serif;
@@ -9,14 +82,48 @@
   font-size: 36px;
   color: $blue;
 }
+.projectHeader {
+  display: flex;
+  flex-direction: row;
+}
 .projectSubtitle {
   font-family: futura-pt, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   color: $blue;
-  margin: 0 0 40px 0;
 
+  a {
+    text-decoration: none;
+    color: $blue;
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+.projectSubtitleWebsite {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: $blue;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: $purple;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+
+.projectCreators {
+  font-family: futura-pt, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #ffffff;
   a {
     text-decoration: none;
     color: $blue;
@@ -28,11 +135,9 @@
 
 .projectDetailsContainer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  margin: 20px 0 0 0;
 }
 .projectCoverImage {
-  width: 50%;
   img {
     width: 100%;
     height: auto;
@@ -40,8 +145,6 @@
 }
 
 .projectDescription {
-  width: calc(50% - 40px);
-  margin-left: 40px;
   font-family: futura-pt, sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -68,22 +171,6 @@
   }
   :nth-child(2) {
     font-weight: 300;
-  }
-}
-
-.projectCreators {
-  font-family: futura-pt, sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 20px;
-  color: #ffffff;
-
-  a {
-    text-decoration: none;
-    color: $blue;
-    &:hover {
-      color: $purple;
-    }
   }
 }
 
@@ -127,13 +214,6 @@
 }
 .imageMediaContainer {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 20px 0 0 0;
-  div {
-    width: 49%;
-  }
   img {
     width: 100%;
     height: auto;

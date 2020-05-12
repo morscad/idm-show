@@ -1,4 +1,16 @@
-@import '../vars';
+@import "../vars";
+
+@media (min-width: $lg) {
+
+}
+
+@media (min-width: $md) and (max-width: $lg) {
+
+}
+
+@media (max-width: $md) {
+
+}
 
 .projectListingTitle {
   font-family: futura-pt, sans-serif;
@@ -7,12 +19,14 @@
   font-size: 36px;
   color: #000000;
   margin: 0 0 40px 0;
+  padding-left: 15px;
 }
 .projectListingContainer {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 100%;
+  width: calc(100% - 15px);
+  padding-left: 15px;
 }
 
 .projectName {
@@ -28,7 +42,7 @@
     }
   }
   margin: 0 20px 20px 0;
-  width: 70%;
+  width: 80%;
 }
 .authors {
   font-style: italic;

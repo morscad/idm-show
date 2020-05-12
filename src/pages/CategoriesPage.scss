@@ -1,13 +1,48 @@
+@import "../vars";
+
+@media (min-width: $lg) {
+  .categoryContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .categoryBox {
+    width: 300px;
+    height: 180px;
+  }
+}
+
+@media (min-width: $md) and (max-width: $lg) {
+  .categoryContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+  .categoryBox {
+    width: 360px;
+    height: 200px;
+  }
+}
+
+@media (max-width: $md) {
+  .categoryContainer {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .categoryBox {
+    width: 400px;
+    height: 220px;
+  }
+}
+
 .categoryContainer {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .categoryBox {
-  width: 300px;
-  height: 180px;
   background-color: #999999;
   display: flex;
   align-items: center;

@@ -1,0 +1,81 @@
+﻿id,time,theatre1,theatre2,sectionIntro
+1,3:00 PM,Intro to Show (C.A.R.L.A.) ,,common
+2,3:05 PM,,,no
+3,3:10 PM,Intro to PERSPECTIVE & PERCEPTION,,no
+4,3:15 PM,Chuyi (Kiki) Wu [Presentation],,no
+5,3:20 PM,Chuyi (Kiki) Wu [Q&A],,no
+6,3:25 PM,Intro to STORYTELLING,,common
+7,3:30 PM,Yuming Lu [Presentation],Aparna Ramakrishnan [Presentation],no
+8,3:35 PM,Jude Zhu [Presentation],Kasper Chou [Presentation],no
+9,3:40 PM,Yuming Lu [Q&A],Kasper Chou [Presentation],no
+10,3:45 PM,Jude Zhu [Q&A],Aparna Ramakrishnan [Q&A],no
+11,3:50 PM,,Kasper Chou [Q&A],no
+12,3:55 PM,,Kasper Chou [Q&A],no
+13,4:00 PM,Intro to COMMUNITY & SERVICE,,theatre1
+14,4:05 PM,Che-Yu Wu [Presentation],,no
+15,4:10 PM,Che-Yu Wu [Q&A],,no
+16,4:15 PM,Intro to PROBLEM-SOLVING,,common
+17,4:20 PM,Carolyn McCawley [Presentation],Keita Ohshiro [Presentation],no
+18,4:25 PM,Paolla Bruno Dutra [Presentation],Keita Ohshiro [Presentation],no
+19,4:30 PM,Jordan Kane [Presentation],Keita Ohshiro [Q&A],no
+20,4:35 PM,SHAHRIAR I SADI [Presentation],Keita Ohshiro [Q&A],no
+21,4:40 PM,Lauren Owen [Presentation],,no
+22,4:45 PM,Carolyn McCawley [Q&A],,no
+23,4:50 PM,Paolla Bruno Dutra [Q&A],,no
+24,4:55 PM,Jordan Kane [Q&A],,no
+25,5:00 PM,SHAHRIAR I SADI [Q&A],,no
+26,5:05 PM,Lauren Owen [Q&A],,no
+27,5:10 PM,Intro to CULTURE & PHILOSOPHY,,common
+28,5:15 PM,Carolina Manent [Presentation],Junnan Lyu [Presentation],no
+29,5:20 PM,Carolina Manent [Q&A],Junnan Lyu [Q&A],no
+30,5:25 PM,Intro to INTERPRET & RESHAPE,,common
+31,5:30 PM,Bertin Kenol [Presentation],Aparna Ramakrishnan [Presentation],no
+32,5:35 PM,Bertin Kenol [Q&A],Aparna Ramakrishnan [Presentation],no
+33,5:40 PM,Break (prerecorded content here),Aparna Ramakrishnan [Q&A],no
+34,5:45 PM,,Aparna Ramakrishnan [Q&A],no
+35,5:50 PM,Intro to ACTIVISM & AWARENESS,,common
+36,5:55 PM,Brittney Mc [Presentation],Neha Vasudevan [Presentation],no
+37,6:00 PM,Payton Meyer [Presentation],Neha Vasudevan [Q&A],no
+38,6:05 PM,Karla Joselly Ruiz [Presentation],,no
+39,6:10 PM,Nicole Nimeth [Presentation],,no
+40,6:15 PM,Lauren Owen [Presentation],,no
+41,6:20 PM,Brittney Mc [Q&A],,no
+42,6:25 PM,Payton Meyer [Q&A],,no
+43,6:30 PM,Karla Joselly Ruiz [Q&A],,no
+44,6:35 PM,Nicole Nimeth [Q&A],,no
+45,6:40 PM,Lauren Owen [Q&A],,no
+46,6:45 PM,Intro to EXPERIMENTAL & EXPLORATORY TECH,,common
+47,6:50 PM,"Tamanda Msosa, Lucas White,
+& Luke DuBois Live Demo",Kasper Chou [Presentation],no
+48,6:55 PM,,Julia Haskins [Presentation],no
+49,7:00 PM,Lucas White [Presentation],Samuel (Sammy) Avery Levin [Presentation],no
+50,7:05 PM,Thomas Knoepffler [Presentation],Kasper Chou [Presentation],no
+51,7:10 PM,Thomas Knoepffler [Presentation],Gustavo Toledo [Presentation],no
+52,7:15 PM,Clara Gilligan [Presentation],Kasper Chou [Q&A],no
+53,7:20 PM,Yalta Zhu [Presentation],Julia Haskins [Q&A],no
+54,7:25 PM,Steven Yoo [Presentation],Samuel (Sammy) Avery Levin [Q&A],no
+55,7:30 PM,Tamanda Msosa [Q&A],Kasper Chou [Q&A],no
+56,7:35 PM,Lucas White [Q&A],Gustavo Toledo [Q&A],no
+57,7:40 PM,Thomas Knoepffler [Q&A],,no
+58,7:45 PM,Thomas Knoepffler [Q&A],,no
+59,7:50 PM,Clara Gilligan [Q&A],,no
+60,7:55 PM,Yalta Zhu [Q&A],,no
+61,8:00 PM,Steven Yoo [Q&A],,no
+62,8:05 PM,Intro to PURE CREATION,,common
+63,8:10 PM,Che-Yu Wu [Presentation],Neha Vasudevan [Presentation],no
+64,8:15 PM,Kevin Ferreira [Presentation],M. Adlan Arvyanda Ramly [Presentation],no
+65,8:20 PM,Jessica Chase [Presentation],Neha Vasudevan [Q&A],no
+66,8:25 PM,John Ceballos [Presentation],M. Adlan Arvyanda Ramly [Q&A],no
+67,8:30 PM,Marcela Bragagnolo [Presentation],,no
+68,8:35 PM,Che-Yu Wu [Q&A],,no
+69,8:40 PM,Kevin Ferreira [Q&A],,no
+70,8:45 PM,Jessica Chase [Q&A],,no
+71,8:50 PM,John Ceballos [Q&A],,no
+72,8:55 PM,Marcela Bragagnolo [Q&A],,no
+73,9:00 PM,Intro to REFLECTION & IDENTITY,,common
+74,9:05 PM,Jiuxin Zhu [Presentation],Neha Vasudevan [Presentation],no
+75,9:10 PM,Jimmy Hwang [Presentation],Neha Vasudevan [Q&A],no
+76,9:15 PM,Jiuxin Zhu [Q&A],,no
+77,9:20 PM,Jimmy Hwang [Q&A],,no
+78,9:25 PM,Transition/ buffer,,no
+79,9:30 PM,Closing Speech (Scott/Luke),,common

@@ -4,13 +4,8 @@ import { Link } from "react-router-dom";
 
 import "./HomePage.scss";
 import { Carousel } from "react-responsive-carousel";
-import img1 from "../assets/images/student-work/1.jpg";
-import img2 from "../assets/images/student-work/2.jpg";
-import img3 from "../assets/images/student-work/3.jpg";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import LiveEvents from "../components/LiveEvents";
-import ByCategory from "../components/ByCategory";
 
 const HomePage = () => {
   return (

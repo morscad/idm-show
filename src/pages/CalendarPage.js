@@ -58,7 +58,7 @@ const CalendarPage = () => {
                 )}
                 {show.sectionIntro === "theatre2" && (
                   <>
-                    <div className={`tableCelSmall invertedColors`}>
+                    <div className={`tableCelSmall normalColors`}>
                       {show.time}
                     </div>
                     <div className={`tableCel normalColors`}>

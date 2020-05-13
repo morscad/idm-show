@@ -115,7 +115,7 @@ const ProjectDetailsPage = () => {
 
             </div>
             <div className={"projectDescription"}>
-              <div>{currentProject.longDescription}</div>
+              <div dangerouslySetInnerHTML={{__html:currentProject.longDescription }}></div>
               {!!currentProject.otherDocumentation &&
                 currentProject.otherDocumentation !== "" && (
                   <>

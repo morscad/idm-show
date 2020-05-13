@@ -1,0 +1,569 @@
+[
+  {
+    "id": 1,
+    "time": "3:00 PM",
+    "theatre1": "Intro to Show (C.A.R.L.A.) ",
+    "theatre2": "",
+    "sectionIntro": "common"
+  },
+  {
+    "id": 2,
+    "time": "3:05 PM",
+    "theatre1": "Intro to PERSPECTIVE & PERCEPTION",
+    "theatre2": "",
+    "sectionIntro": "common"
+  },
+  {
+    "id": 3,
+    "time": "3:10 PM",
+    "theatre1": "Chuyi (Kiki) Wu [Presentation] Doughland",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 4,
+    "time": "3:15 PM",
+    "theatre1": "Chuyi (Kiki) Wu [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 5,
+    "time": "3:20 PM",
+    "theatre1": "Intro to STORYTELLING",
+    "theatre2": "Intro to STORYTELLING",
+    "sectionIntro": "common"
+  },
+  {
+    "id": 6,
+    "time": "3:25 PM",
+    "theatre1": "Jude Zhu [Presentation]",
+    "theatre2": "Aparna Ramakrishnan [Presentation] Novel Generator",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 7,
+    "time": "3:30 PM",
+    "theatre1": "Jude Zhu [Q&A]",
+    "theatre2": "Kasper Chou [Presentation] Chicken",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 8,
+    "time": "3:35 PM",
+    "theatre1": "Intro to COMMUNITY & SERVICE",
+    "theatre2": "Kasper Chou [Presentation] Juicebox",
+    "sectionIntro": "theatre1"
+  },
+  {
+    "id": 9,
+    "time": "3:40 PM",
+    "theatre1": "Che-Yu Wu [Presentation] Music Tool",
+    "theatre2": "Aparna Ramakrishnan [Q&A]",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 10,
+    "time": "3:45 PM",
+    "theatre1": "Che-Yu Wu [Q&A]",
+    "theatre2": "Kasper Chou [Q&A]",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 11,
+    "time": "3:50 PM",
+    "theatre1": "Intro to PROBLEM-SOLVING",
+    "theatre2": "Kasper Chou [Q&A]",
+    "sectionIntro": "theatre1"
+  },
+  {
+    "id": 12,
+    "time": "3:55 PM",
+    "theatre1": "Carolyn McCawley [Presentation]",
+    "theatre2": "Intro to PROBLEM-SOLVING",
+    "sectionIntro": "theatre2"
+  },
+  {
+    "id": 13,
+    "time": "4:00 PM",
+    "theatre1": "Paolla Bruno Dutra [Presentation]",
+    "theatre2": "Keita Ohshiro [Presentation] Basshug",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 14,
+    "time": "4:05 PM",
+    "theatre1": "Jordan Kane [Presentation]",
+    "theatre2": "Keita Ohshiro [Presentation] Sensory",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 15,
+    "time": "4:10 PM",
+    "theatre1": "Lauren Owen [Presentation] Galaxy",
+    "theatre2": "Keita Ohshiro [Q&A]",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 16,
+    "time": "4:15 PM",
+    "theatre1": "Shreyansh Kotak [Presentation]",
+    "theatre2": "Keita Ohshiro [Q&A]",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 17,
+    "time": "4:20 PM",
+    "theatre1": "Carolyn McCawley & Samuel [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 18,
+    "time": "4:25 PM",
+    "theatre1": "Paolla Bruno Dutra [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 19,
+    "time": "4:30 PM",
+    "theatre1": "Jordan Kane [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 20,
+    "time": "4:35 PM",
+    "theatre1": "Lauren Owen [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 21,
+    "time": "4:40 PM",
+    "theatre1": "Shreyansh Kotak [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 22,
+    "time": "4:45 PM",
+    "theatre1": "Intro to CULTURE & PHILOSOPHY",
+    "theatre2": "Intro to CULTURE & PHILOSOPHY",
+    "sectionIntro": "common"
+  },
+  {
+    "id": 23,
+    "time": "4:50 PM",
+    "theatre1": "Carolina Manent [Presentation]",
+    "theatre2": "Junnan Lyu [Presentation]",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 24,
+    "time": "4:55 PM",
+    "theatre1": "Arnav Mehta[Presentation]",
+    "theatre2": "Junnan Lyu & Jenny & Ellen [Q&A]",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 25,
+    "time": "5:00 PM",
+    "theatre1": "Arnav Mehta [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 26,
+    "time": "5:05 PM",
+    "theatre1": "Carolina Manent [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 27,
+    "time": "5:10 PM",
+    "theatre1": "Intro to INTERPRET & RESHAPE",
+    "theatre2": "Intro to INTERPRET & RESHAPE",
+    "sectionIntro": "common"
+  },
+  {
+    "id": 28,
+    "time": "5:15 PM",
+    "theatre1": "Bertin Kenol [Presentation]",
+    "theatre2": "Aparna Ramakrishnan [Presentation] Bouncing Ball",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 29,
+    "time": "5:20 PM",
+    "theatre1": "Bertin Kenol & Nicolai [Q&A]",
+    "theatre2": "Aparna Ramakrishnan [Presentation]",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 30,
+    "time": "5:25 PM",
+    "theatre1": "Break (prerecorded content here)",
+    "theatre2": "Aparna Ramakrishnan [Q&A]",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 31,
+    "time": "5:30 PM",
+    "theatre1": "",
+    "theatre2": "Aparna Ramakrishnan [Q&A]",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 32,
+    "time": "5:35 PM",
+    "theatre1": "Intro to ACTIVISM & AWARENESS",
+    "theatre2": "",
+    "sectionIntro": "theatre1"
+  },
+  {
+    "id": 33,
+    "time": "5:40 PM",
+    "theatre1": "Brittney Mc [Presentation]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 34,
+    "time": "5:45 PM",
+    "theatre1": "Payton Meyer [Presentation]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 35,
+    "time": "5:50 PM",
+    "theatre1": "Karla Joselly Ruiz [Presentation]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 36,
+    "time": "5:55 PM",
+    "theatre1": "Nicole Nimeth [Presentation]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 37,
+    "time": "6:00 PM",
+    "theatre1": "Lauren Owen [Presentation] Remember Us",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 38,
+    "time": "6:05 PM",
+    "theatre1": "Catherine Gao [Presentation]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 39,
+    "time": "6:10 PM",
+    "theatre1": "Chuyi (Kiki) Wu [Presentation] hOOOme",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 40,
+    "time": "6:15 PM",
+    "theatre1": "Chuyi (Kiki) Wu [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 41,
+    "time": "6:20 PM",
+    "theatre1": "Catherine Gao [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 42,
+    "time": "6:25 PM",
+    "theatre1": "Brittney Mc [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 43,
+    "time": "6:30 PM",
+    "theatre1": "Payton Meyer [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 44,
+    "time": "6:35 PM",
+    "theatre1": "Karla Joselly Ruiz [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 45,
+    "time": "6:40 PM",
+    "theatre1": "Nicole Nimeth [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 46,
+    "time": "6:45 PM",
+    "theatre1": "Lauren Owen [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 47,
+    "time": "6:50 PM",
+    "theatre1": "",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 48,
+    "time": "6:55 PM",
+    "theatre1": "",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 49,
+    "time": "7:00 PM",
+    "theatre1": "Intro to EXPERIMENTAL & EXPLORATORY TECH",
+    "theatre2": "Intro to EXPERIMENTAL & EXPLORATORY TECH",
+    "sectionIntro": "common"
+  },
+  {
+    "id": 50,
+    "time": "7:05 PM",
+    "theatre1": "Tamanda Msosa, Lucas White,\n& Luke DuBois Live Demo",
+    "theatre2": "Kasper Chou [Presentation] Egg",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 51,
+    "time": "7:10 PM",
+    "theatre1": "",
+    "theatre2": "Samuel (Sammy) Avery Levin [Presentation]",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 52,
+    "time": "7:15 PM",
+    "theatre1": "Lucas White [Presentation]",
+    "theatre2": "Kasper Chou [Presentation] Pop",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 53,
+    "time": "7:20 PM",
+    "theatre1": "Thomas Knoepffler [Presentation]",
+    "theatre2": "Gustavo Toledo [Presentation] Fashion Engineering",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 54,
+    "time": "7:25 PM",
+    "theatre1": "Thomas Knoepffler [Presentation]",
+    "theatre2": "Kasper Chou [Q&A]",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 55,
+    "time": "7:30 PM",
+    "theatre1": "Clara Gilligan [Presentation]",
+    "theatre2": "Samuel (Sammy) Avery Levin [Q&A]",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 56,
+    "time": "7:35 PM",
+    "theatre1": "Steven Yoo [Presentation]",
+    "theatre2": "Kasper Chou [Q&A]",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 57,
+    "time": "7:40 PM",
+    "theatre1": "Yalta",
+    "theatre2": "Gustavo Toledo [Q&A]",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 58,
+    "time": "7:45 PM",
+    "theatre1": "Yalta",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 59,
+    "time": "7:50 PM",
+    "theatre1": "Tamanda Msosa [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 60,
+    "time": "7:55 PM",
+    "theatre1": "Lucas White [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 61,
+    "time": "8:00 PM",
+    "theatre1": "Thomas Knoepffler [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 62,
+    "time": "8:05 PM",
+    "theatre1": "Thomas Knoepffler [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 63,
+    "time": "8:10 PM",
+    "theatre1": "Clara Gilligan [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 64,
+    "time": "8:15 PM",
+    "theatre1": "Steven Yoo [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 65,
+    "time": "8:20 PM",
+    "theatre1": "",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 66,
+    "time": "8:25 PM",
+    "theatre1": "",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 67,
+    "time": "8:30 PM",
+    "theatre1": "Intro to PURE CREATION",
+    "theatre2": "",
+    "sectionIntro": "theatre1"
+  },
+  {
+    "id": 68,
+    "time": "8:35 PM",
+    "theatre1": "Che-Yu Wu [Presentation] Daily Practice",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 69,
+    "time": "8:40 PM",
+    "theatre1": "Jessica Chase [Presentation]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 70,
+    "time": "8:45 PM",
+    "theatre1": "Marcela Bragagnolo [Presentation]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 71,
+    "time": "8:50 PM",
+    "theatre1": "Che-Yu Wu [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 72,
+    "time": "8:55 PM",
+    "theatre1": "Jessica Chase [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 73,
+    "time": "9:00 PM",
+    "theatre1": "Marcela Bragagnolo [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 74,
+    "time": "9:05 PM",
+    "theatre1": "",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 75,
+    "time": "9:10 PM",
+    "theatre1": "",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 76,
+    "time": "9:15 PM",
+    "theatre1": "Intro to REFLECTION & IDENTITY",
+    "theatre2": "",
+    "sectionIntro": "theatre1"
+  },
+  {
+    "id": 77,
+    "time": "9:20 PM",
+    "theatre1": "Jiuxin Zhu [Presentation]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 78,
+    "time": "9:25 PM",
+    "theatre1": "Jiuxin Zhu [Q&A]",
+    "theatre2": "",
+    "sectionIntro": "no"
+  },
+  {
+    "id": 79,
+    "time": "9:30 PM",
+    "theatre1": "Transition",
+    "theatre2": "",
+    "sectionIntro": "common"
+  },
+  {
+    "id": 80,
+    "time": "9:35 PM",
+    "theatre1": "Closing Speech (Scott/Luke)",
+    "theatre2": "",
+    "sectionIntro": "common"
+  },
+  {
+    "id": 81,
+    "time": "9:40 PM",
+    "theatre1": "",
+    "theatre2": "",
+    "sectionIntro": ""
+  }
+]

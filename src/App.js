@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import { concat } from "lodash";
 
 import "./App.scss";
 import HomePage from "./pages/HomePage";
-import UserManager from "./services/UserManager";
-import api from "./services/apiService";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
 import CalendarPage from "./pages/CalendarPage";
@@ -32,14 +29,13 @@ const App = () => {
   const [isInit, init] = useState(false);
 
   const getAllProjects = async () => {
-    let projects = [];
     let projectByCategory = {};
     let liveShows = [];
     let settings = {};
-    Object.keys(siteSettings).map(key => {
+    Object.keys(siteSettings).forEach(key => {
       settings[key] = siteSettings[key];
     });
-
+    console.log(settings);
     studentWork.forEach(project => {
       if (!projectByCategory[project.techCategory]) {
         if (!project.techCategory) {
@@ -50,7 +46,7 @@ const App = () => {
       projectByCategory[project.techCategory].push(project);
     });
 
-    liveSchedule.map(res => {
+    liveSchedule.forEach(res => {
       liveShows.push(res);
     });
     liveShows = liveShows.sort((a, b) => (a.time > b.time ? 1 : -1));

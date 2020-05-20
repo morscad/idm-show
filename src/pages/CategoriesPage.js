@@ -17,7 +17,7 @@ import web from '../assets/images/web.jpg';
 import xr from '../assets/images/xr.jpg';
 
 const CategoriesPage = () => {
-  const [state, setState] = useContext(MainContext);
+  const [state, ] = useContext(MainContext);
   const [projectList, setProjectList] = useState();
   const [catImages, setCatImages] = useState();
   useEffect(() => {

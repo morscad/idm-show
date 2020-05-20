@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React from "react";
 import Drawer from "@material-ui/core/Drawer";
 import Button from "@material-ui/core/Button";
 
@@ -14,7 +14,6 @@ import "./MainLayout.scss";
 import { Link, useLocation } from "react-router-dom";
 
 const MainLayout = ({ children }) => {
-  const [showPOpup, setShowPopup] = useState(false);
   const [drawerState, setDrawerState] = React.useState(false);
 
   const toggleDrawer = open => event => {
@@ -81,7 +80,7 @@ const MainLayout = ({ children }) => {
               href={"https://engineering.nyu.edu/"}
               target={"_blank"}
               referrerPolicy={"no-referrer"}
-              rel={"noreferrer nofollow"}
+              rel={"noopener noreferrer"}
             >
               <img
                 src={tandon_long_black}
@@ -94,7 +93,7 @@ const MainLayout = ({ children }) => {
               href={"hhttps://www.instagram.com/idmnyu/"}
               target={"_blank"}
               referrerPolicy={"no-referrer"}
-              rel={"noreferrer nofollow"}
+              rel={"noopener noreferrer"}
             >
               <FontAwesomeIcon className={"socialIcons"} icon={faInstagram} />
             </a>
@@ -102,7 +101,7 @@ const MainLayout = ({ children }) => {
               href={"https://vimeo.com/idmnyu"}
               target={"_blank"}
               referrerPolicy={"no-referrer"}
-              rel={"noreferrer nofollow"}
+              rel={"noopener noreferrer"}
             >
               <FontAwesomeIcon className={"socialIcons"} icon={faVimeo} />
             </a>

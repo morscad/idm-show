@@ -1,11 +1,11 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 
 import "./CalendarPage.scss";
 import MainLayout from "../layout/MainLayout";
 import { MainContext } from "../App";
 import { has } from "lodash";
 const CalendarPage = () => {
-  const [state, setState] = useContext(MainContext);
+  const [state, ] = useContext(MainContext);
   return (
     <MainLayout>
       <div className={"calendarContainer"}>

@@ -1,8 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import MainLayout from "../layout/MainLayout";
 import { Link } from "react-router-dom";
-import moment from "moment";
-import { has } from "lodash";
 
 import "./HomePage.scss";
 
@@ -10,7 +8,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { MainContext } from "../App";
 
 const HomePage = () => {
-  const [state, setState] = useContext(MainContext);
+  const [state, ] = useContext(MainContext);
   const [firstStageCurrentTitle, setFirstStageCurrentTitle] = useState("");
   const [firstStageCurrentBody, setFirstStageCurrentBody] = useState("");
   const [firstStageNextTitle, setFirstStageNextTitle] = useState("");
@@ -21,20 +19,30 @@ const HomePage = () => {
   const [secondStageNextTitle, setSecondStageNextTitle] = useState("");
   const [secondStageNextBody, setSecondStageNextBody] = useState("");
 
-  const generateDateFromSchedule = t => {
+  /*const generateDateFromSchedule = t => {
     const rawHour = t.split(" ")[0];
     const realHour = parseInt(rawHour.split(":")[0]) + 12;
     const realMins = parseInt(rawHour.split(":")[1]);
-    const now = new Date();
     const date = new Date();
     date.setHours(realHour);
     date.setMinutes(realMins);
 
     return date;
-  };
+  };*/
   useEffect(() => {
-    if (has(state, "liveShows") && state.liveShows.length > 0) {
-      // if (moment().format('h:mm A').isBefore(state.liveShows[0])) {
+    setFirstStageCurrentTitle("Previous broadcast from Stage 1");
+    setSecondStageCurrentTitle("Previous broadcast from Stage 2");
+
+    setFirstStageCurrentBody("");
+    setSecondStageCurrentBody("");
+
+    setFirstStageNextTitle("Was live on");
+    setFirstStageNextBody('May 12, 2020');
+
+    setSecondStageNextTitle("Was live on");
+    setSecondStageNextBody('May 12, 2020');
+
+    /*if (has(state, "liveShows") && state.liveShows.length > 0) {
 
       let date = generateDateFromSchedule(state.liveShows[0].time);
       let dateNext = generateDateFromSchedule(state.liveShows[0].time);
@@ -105,9 +113,7 @@ const HomePage = () => {
           }
         }
       }
-
-      // }
-    }
+    }*/
   }, [state]);
 
   return (

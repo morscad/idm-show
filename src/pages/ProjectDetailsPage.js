@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ProjectDetailsPage = () => {
   const { projectID } = useParams();
-  const [state, setState] = useContext(MainContext);
+  const [state, ] = useContext(MainContext);
   const [currentProject, setCurrentProject] = useState();
   const [playerDimensions, setPlayerDimensions] = useState({
     width: 0,
@@ -34,18 +34,18 @@ const ProjectDetailsPage = () => {
     return () => {
       window.removeEventListener("resize", updateDimensions);
     };
-  }, [window]);
+  }, [playerDimensions.width]);
   useEffect(() => {
     if (has(state, "projects") && Object.keys(state.projects).length > 0) {
-      Object.keys(state.projects).map(category => {
-        state.projects[category].map(project => {
+      Object.keys(state.projects).forEach(category => {
+        state.projects[category].forEach(project => {
           if (project.id.toString() === projectID.toString()) {
             setCurrentProject(project);
           }
         });
       });
     }
-  }, [state]);
+  }, [state, projectID]);
 
   return (
     <MainLayout>
@@ -62,7 +62,7 @@ const ProjectDetailsPage = () => {
                   href={currentProject.onlineURL}
                   target={"_blank"}
                   referrerPolicy={"no-referrer"}
-                  rel={"noreferrer nofollow"}
+                  rel={"noopener noreferrer"}
                 >
                   Website
                 </a>
@@ -81,7 +81,7 @@ const ProjectDetailsPage = () => {
                         href={currentProject.instagram}
                         target={"_blank"}
                         referrerPolicy={"no-referrer"}
-                        rel={"noreferrer nofollow"}
+                        rel={"noopener noreferrer"}
                     >
                       <FontAwesomeIcon
                           className={"instagramLink"}
@@ -99,7 +99,7 @@ const ProjectDetailsPage = () => {
                           href={currentProject.portfolioURL}
                           target={"_blank"}
                           referrerPolicy={"no-referrer"}
-                          rel={"noreferrer nofollow"}
+                          rel={"noopener noreferrer"}
                       >
                         Portfolio
                       </a>
@@ -110,7 +110,7 @@ const ProjectDetailsPage = () => {
             <div className={"projectCoverImage"}>
               <img
                 src={currentProject.coverImage.split("open?").join("uc?")}
-                alt={"Cover Image"}
+                alt={`Main image for the  ${currentProject.projectTitle} project`}
               />
 
             </div>
@@ -124,7 +124,7 @@ const ProjectDetailsPage = () => {
                         href={currentProject.otherDocumentation}
                         target={"_blank"}
                         referrerPolicy={"no-referrer"}
-                        rel={"noreferrer nofollow"}
+                        rel={"noopener noreferrer"}
                       >
                         Further Project Documentations
                       </a>
@@ -148,7 +148,7 @@ const ProjectDetailsPage = () => {
                   href={currentProject.audioURL}
                   target={"_blank"}
                   referrerPolicy={"no-referrer"}
-                  rel={"noreferrer nofollow"}
+                  rel={"noopener noreferrer"}
                 >
                   <FontAwesomeIcon icon={faSoundcloud} /> Listen on SoundCloud
                 </a>
@@ -167,6 +167,7 @@ const ProjectDetailsPage = () => {
                     frameBorder="0"
                     allow="autoplay; fullscreen"
                     allowFullScreen
+                    title={`Video Documentation for ${currentProject.projectTitle} on Vimeo`}
                   ></iframe>
                 )}
                 {currentProject.videoURL.indexOf("youtu") > -1 && (
@@ -183,6 +184,7 @@ const ProjectDetailsPage = () => {
                     frameBorder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
+                    title={`Youtube Documentation for ${currentProject.projectTitle} on Vimeo`}
                   ></iframe>
                 )}
               </div>
@@ -200,6 +202,7 @@ const ProjectDetailsPage = () => {
                       frameBorder="0"
                       allow="autoplay; fullscreen"
                       allowFullScreen
+                      title={`Secondary video Documentation for ${currentProject.projectTitle} on Vimeo`}
                     ></iframe>
                   )}
                   {currentProject.secondaryVideoURL.indexOf("youtu") > -1 && (
@@ -218,6 +221,7 @@ const ProjectDetailsPage = () => {
                       frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
+                      title={`Secondary video Documentation for ${currentProject.projectTitle} on Youtube`}
                     ></iframe>
                   )}
                 </div>
@@ -235,6 +239,7 @@ const ProjectDetailsPage = () => {
                               {imageURL.indexOf("open?") > -1 && (
                                 <img
                                   src={imageURL.split("open?").join("uc?")}
+                                  alt={`Documentation for ${currentProject.projectTitle}`}
                                 />
                               )}
                             </div>
@@ -248,6 +253,7 @@ const ProjectDetailsPage = () => {
                         src={currentProject.finalImageList
                           .split("open?")
                           .join("uc?")}
+                        alt={`Documentation for ${currentProject.projectTitle}`}
                       />
                     )}
                 </div>

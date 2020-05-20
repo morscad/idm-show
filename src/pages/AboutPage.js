@@ -8,7 +8,7 @@ const AboutPage = () => {
     <MainLayout>
       <div className={"aboutContainer"}>
         <div className={"aboutImage"}>
-          <img src={about} />
+          <img src={about} alt={"The Integrated Digital Media Spring showcase"}/>
         </div>
         <div className={"aboutContent"}>
           <div className={"aboutText"}>
@@ -25,9 +25,9 @@ const AboutPage = () => {
                 href={"http://idm.engineering.nyu.edu/"}
                 target={"_blank"}
                 referrerPolicy={"no-referrer"}
-                rel={"noreferrer nofollow"}
+                rel={"noopener noreferrer nofollow"}
               >
-                <img src={idm} />
+                <img src={idm} alt={"The Integrated Digital Media Program @ NYU"} />
               </a>
             </div>
           </div>

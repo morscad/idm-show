@@ -7,12 +7,12 @@ import { Link, useParams } from "react-router-dom";
 
 const ProjectsPage = () => {
   let { categoryName } = useParams();
-  const [state, setState] = useContext(MainContext);
+  const [state, ] = useContext(MainContext);
   const [projectList, setProjectList] = useState();
   useEffect(() => {
     if (has(state, "projects") && Object.keys(state.projects).length > 0) {
       let projects = [];
-      Object.keys(state.projects).map(category => {
+      Object.keys(state.projects).forEach(category => {
         if (
           category
             .toLowerCase()
@@ -28,7 +28,7 @@ const ProjectsPage = () => {
       });
       setProjectList(projects);
     }
-  }, [state]);
+  }, [state, categoryName]);
   return (
     <MainLayout>
       {!!projectList && projectList.length > 0 && (
